@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "treeview": "/component/treeview/treeview"
+  }
+}

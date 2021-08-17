@@ -1,0 +1,14 @@
+<!--pages/test1/test1.wxml-->
+<button bindtap="showTreeView">是否隐藏treeview=={{isHideTreeView}}</button>
+<view>{{strleafNodes}}</view>
+<!-- <view>{{strParentNodes}}</view>
+<view>{{stringparentNode}}</view> -->
+<treeview
+originalAllNodes = "{{originalAllNodes}}"
+defaultExpandLevel = "{{defaultExpandLevel}}"
+isHiddenTreeview="{{isHideTreeView}}"
+isSaveNodes="{{isSaveNodes}}"
+isSave="{{isSave}}"
+bind:listener="selectListener"
+>
+</treeview>

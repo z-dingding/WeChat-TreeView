@@ -1,0 +1,15 @@
+
+//根据node判断图片的加载地址
+var nodeSrc = function(node){
+  var result = '';
+   if(node.icon == 0){
+result ='../../images/icon_expand.png'
+   }else if(node.icon == 1){
+result ='../../images/icon_collapse.png'
+   }
+   return result;
+}
+
+module.exports = {
+ nodeSrc:nodeSrc,
+}

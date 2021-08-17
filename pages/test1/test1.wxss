@@ -1,0 +1,9 @@
+/* pages/test1/test1.wxss */
+
+.showTreeView{
+  visibility: visible;
+}
+
+.hideTreeView{
+  visibility: hidden;
+}

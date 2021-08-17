@@ -1,0 +1,18 @@
+<wxs module="commonwxs" src="/pages/wxs/common.wxs"></wxs>
+
+<view class="box" hidden="{{isHiddenTreeview}}">
+  <view class="treeviewdailog">
+    <view class="view_title">请选择</view>
+    <view class="view_picker">
+      <block wx:for="{{visibleNodes}}" wx:key="id">
+        <view class="view_picker_item">
+          <!-- 如果是子节点隐藏该图标 -->
+          <image wx:if="{{item.icon != -1}}" class="picker_item_expandorcollapse" src="{{commonwxs.nodeSrc(item)}}" mode="aspectFit" bindtap="expandorcollapseFun" style="margin-left:{{item.level * 15}}rpx" data-index="{{index}}"></image>
+          <checkbox class="picker_item_cb" style="margin-left:{{item.level * 10 + 10}}rpx ; margin-right: 10rpx" bindtap="changeCheckBox" data-index="{{index}}" checked="{{item.checkbox}}"></checkbox>
+          <view class="picker_item_name">{{item.lable}}</view>
+        </view>
+      </block>
+    </view>
+    <view class="btn_sure" bindtap="sureClick">确定</view>
+  </view>
+</view>

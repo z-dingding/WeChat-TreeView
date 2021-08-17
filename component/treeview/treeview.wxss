@@ -1,0 +1,62 @@
+/* pages/treeview/treeview.wxss */
+
+
+.box{
+  /* min-height: 100vh; */
+  background-color: #F0F4F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+   flex: 1;
+   width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+}
+.treeviewdailog{
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 740rpx;
+  margin: 0 70rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.view_title{
+  background-color:  #486DF6;
+ color: #ffffff;
+ font-size: 18px;
+}
+.btn_sure{
+  background-color:  #486DF6;
+  height: 80rpx;
+   line-height: 80rpx;
+ color: #ffffff;
+ text-align: center;
+
+}
+.view_picker{
+ overflow: scroll;
+  flex: 1;
+}
+.view_picker_item{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20rpx;
+}
+.picker_item_cb{
+  color: #486DF6;
+  /* margin: 0 15rpx; */
+}
+
+.picker_item_expandorcollapse{
+  width: 30rpx;
+  height: 30rpx;
+  opacity: 0.8;
+}
